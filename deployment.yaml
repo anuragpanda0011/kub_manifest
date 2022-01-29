@@ -18,7 +18,7 @@ spec:
         app: brownbag
     spec:
       containers:
-      - image: anurag0011/brownbag:20
+      - image: anurag0011/brownbag:7
         name: brownbag
         resources: {}
 status: {}
