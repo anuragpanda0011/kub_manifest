@@ -14,7 +14,7 @@ node {
                         sh "git config user.email anurag.a.panda@accenture.com"
                         sh "git config user.name Anurag"
                         sh "cat deployment.yaml"
-                        sh "sed -i 's+anurag0011/brownbag.*+anurag0011/brownbag:${DOCKERTAG}+g' deployment.yaml"
+                        sh "sed -i 's+anurag0011/brownbagsession.*+anurag0011/brownbagsession:${DOCKERTAG}+g' deployment.yaml"
                         sh "cat deployment.yaml"
                         sh "git add ."
                         sh "git commit -m 'Done by Jenkins Job changemanifest: ${env.BUILD_NUMBER}'"
